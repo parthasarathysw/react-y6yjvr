@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 
 export default function Child(prop) {
-  const [PrtName, setPrtName] = useState(prop.UserName);
+  const [PrtName, setPrtName] = useState();
 
   return (
     <div>
@@ -11,7 +11,6 @@ export default function Child(prop) {
         value={PrtName}
         onChange={(e) => {
           setPrtName(e.target.value);
-          prop.changeUserName(e.target.value);
         }}
       />
     </div>

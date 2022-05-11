@@ -8,7 +8,7 @@ export default function App() {
     <div>
       <h1>Hello {UserName}!</h1>
       <p>Start editing to see some magic happen :)</p>
-      <Child changeUserName={setUserName} UserName={UserName} />
+      <Child />
     </div>
   );
 }
